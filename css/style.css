@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 300;
+}
+
+h1,
+p::first-letter,
+.div-2 button,
+.div-1 a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.div-1,
+.div-2 {
+  position: absolute;
+  top: 0;
+  width: calc(50vw - 80px);
+  height: calc(100vh - 80px);
+  padding: 40px;
+  margin: 40px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 40px red;
+  border-radius: 40px;
+  /*
+  transition: 400ms transform;
+
+  &:hover {
+      transform: scale(1.1);
+  }
+  */
+}
+
+.div-1 {
+  left: 0;
+  overflow: auto;
+}
+.div-1 h1 {
+  font-size: 40px;
+  padding-bottom: 40px;
+  line-height: 1.8em;
+}
+.div-1 p {
+  color: #333;
+}
+.div-1 p::first-letter {
+  font-size: 40px;
+}
+.div-1 a {
+  display: block;
+  text-decoration: none;
+  color: red;
+}
+.div-1 a:hover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  color: white;
+  z-index: 99;
+}
+
+.div-2 {
+  right: 0;
+}
+.div-2 input[type=text],
+.div-2 input[type=email],
+.div-2 input[type=password] {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 2px sollid #333;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.div-2 button {
+  display: block;
+  width: 200px;
+  height: 80px;
+  border: 4px solid #333;
+  font-size: 20px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  background-color: brown;
+  transition: 800ms tranform;
+}
+.div-2 button:hover {
+  transform: rotate3d(1, 1, 1, 45deg);
+}
+
+/*# sourceMappingURL=style.css.map */
